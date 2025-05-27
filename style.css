@@ -1,0 +1,249 @@
+/* Font and Animation Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Button Animations */
+button, input[type="submit"], .sort-btn, .home-btn, .edit-btn, .delete-btn {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+button:hover, input[type="submit"]:hover, .sort-btn:hover, 
+.home-btn:hover, .edit-btn:hover, .delete-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Modal Animation */
+.modal-content {
+    animation: modalOpen 0.4s ease-out;
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Record Hover Effect */
+.record {
+    transition: all 0.3s ease;
+}
+
+.record:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.navbar {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.nav-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.records {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.record {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.record h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+.record p {
+    margin: 5px 0;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #1976D2;
+}
+.success-box, .error-box {
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-box {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 6px solid #28a745;
+}
+
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 6px solid #dc3545;
+}
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.record {
+    background: #fff;
+    padding: 12px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+body {
+    background-image: url('images/Pets.jpg'); /* replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background: #cccccc00;
+  padding: 0%;
+}
+footer {
+  margin-top: 0%; /* or padding-top */
+}
