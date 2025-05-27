@@ -11,6 +11,50 @@ button, input[type="submit"], .sort-btn, .home-btn, .edit-btn, .delete-btn {
     transition: all 0.3s ease;
     transform: translateY(0);
 }
+.nav-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-wrapper {
+    flex: 1 1 calc(50% - 40px); /* 2 per row with gap */
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    height: 250px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 
 button:hover, input[type="submit"]:hover, .sort-btn:hover, 
 .home-btn:hover, .edit-btn:hover, .delete-btn:hover {
@@ -229,7 +273,7 @@ label {
     margin-bottom: 15px;
 }
 body {
-    background-image: url('images/Pets.jpg'); /* replace with your image path */
+    background-image: url('images/pets\ b.png'); /* replace with your image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
